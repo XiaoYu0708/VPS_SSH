@@ -15,7 +15,7 @@ docker build -t xiaoyu0708/vps_ssh .
 若要執行容器並將 SSH 伺服器對外開放於 2222 埠，請使用：
 
 ```bash
-docker run --rm -p 2222:22 xiaoyu0708/vps_ssh
+docker run --rm -p 2222:22 -v .:/root xiaoyu0708/vps_ssh
 ```
 
 ## 連線方式
