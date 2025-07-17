@@ -1,8 +1,8 @@
-FROM ubuntu:22.04
+FROM debian:12
 
 # 安裝 OpenSSH 與其他依賴
 RUN apt-get update && \
-    apt-get install -y openssh-server && \
+    apt-get install -y openssh-server sudo vim git gh && \
     rm -rf /var/lib/apt/lists/*
 
 # 建立必要目錄
